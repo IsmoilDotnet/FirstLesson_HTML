@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Homework</title>
+</head>
+
+<style>
+    body{
+        background-color: rgb(38, 233, 247);
+    }
+
+    .container {
+        width: 400px;
+        margin: 0 auto; 
+        text-align: center;
+    }
+
+    .Vcontainer{
+        display: flex;
+        justify-content: center;
+    }
+
+    .BoxContainer {
+        display: flex; 
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box {
+        width: 180px;
+        height: 70px;
+        background-color: #7c7878;
+        border: 1px solid #292626;
+        margin: 10px;
+        text-align: center;
+        line-height: 70px;
+    }
+</style>
+
+<script>
+    function previous() {        
+        window.location.href = "cLessonFour.html";
+    }
+
+    function next() {
+        window.location.href = "dLessonSix.html";
+    }
+</script>
+
+<body>
+    <div class="container">
+        <h1>Html Homework 😜</h1>
+        <h1>Tablet</h1>
+        <h3 style="font-style: italic;">1: 2 boxes in a row</h3>
+        <h3 style="font-style: italic;">2: Device width 768px -1024px</h3>
+        <h3 style="font-style: italic;">3: Margin between boxes</h3>
+       </div> 
+
+       <div class="Vcontainer">
+           <div class="BoxContainer">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+           </div>
+    
+           <div class="BoxContainer">
+               <div class="box"></div>
+               <div class="box"></div>
+               <div class="box"></div>
+               <div class="box"></div>
+           </div>
+       </div>
+
+
+       <div class="container">
+        <h3>Tablet</h3>
+        <h4>Pages(5:7)</h4>
+        <button onclick="previous()">&#x2B05 Previous page</button>
+        <button onclick="next()">Next page &#10145</button>
+    </div>
+</body>
+</html>

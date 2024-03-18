@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Homework</title>
+</head>
+<style>
+    body{
+        background-color: royalblue;
+    }
+    .container {
+        width: 400px;
+        margin: 0 auto; 
+        text-align: center;
+    }
+
+    .box {
+        width: 200px;
+        height: 200px;
+        background-color: #7c7878;
+        border: 1px solid #292626;
+        display: inline-block; 
+        margin: 10px;
+        text-align: center;
+        line-height: 200px;
+    }
+    .box2 {
+        width: 200px;
+        height: 200px;
+        background-color: #3021b1;
+        border: 1px solid #292626;
+        display: inline-block;
+        margin: 10px;
+        text-align: center; 
+        line-height: 200px; 
+    }
+    .box3 {
+        width: 250px;
+        height: 500px;
+        background-color: #c649d1;
+        border: 1px solid #292626;
+        display: inline-block;
+        margin: 10px;
+        text-align: center; 
+        line-height: 240px; 
+    }
+</style>
+<script>
+    function previous() {        
+        window.location.href = "aLessonOne.html";
+    }
+
+    function next() {
+        window.location.href = "bLessonThree.html";
+    }
+</script>
+<body>
+    <div class="container">
+        <h1>Html Homework &#128512</h1>
+        <h3>________________________________________</h3>
+        <h1>2. Creating nested boxes</h1>
+        <h3>Create two divs and place it inside another div. Nested divs helps to organize the elements and group them.</h3>
+    </div>
+    <div class="container">
+        <div class="container">
+            <div class="box3">
+                <div class="box">Box 1</div>
+                <div class="box2">Box 2</div>
+            </div>
+        </div>
+        <div class="container">
+            <h4>Pages(2:7)</h4>
+            <button onclick="previous()">&#x2B05 Previous page</button>
+            <button onclick="next()">Next page &#10145</button>
+        </div>
+    </div>
+</body>
+</html>
